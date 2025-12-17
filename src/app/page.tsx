@@ -1,6 +1,7 @@
 "use client";
 
 import VoiceButton from '../components/VoiceButton';
+import HouseCard from '../components/housecard';
 
 export default function Home() {
   return (
@@ -11,6 +12,12 @@ export default function Home() {
       <p className="text-white mt-2">Talk to find a home – anywhere in the world!</p>
 
       <VoiceButton />
+
+      <div className="mt-8 grid gap-4 grid-cols-1 md:grid-cols-3">
+        <HouseCard />
+        <HouseCard />
+        <HouseCard />
+      </div>
     </main>
   );
 }

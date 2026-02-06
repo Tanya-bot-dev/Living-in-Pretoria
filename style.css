@@ -1,0 +1,95 @@
+:root{
+    --gold:#d4a73a;
+    --dark-blue:#0b2a4a;
+}
+
+/* RESET */
+body, html {
+    margin:0;
+    font-family:'Montserrat', Arial, sans-serif;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-bg{
+    position:absolute;
+    inset:0;
+    background:url('https://upload.wikimedia.org/wikipedia/commons/6/6b/Uniegebou.jpg?20131211074546') center/cover no-repeat;
+    z-index:-2;
+}
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(rgba(8,22,40,.75),rgba(8,22,40,.35));
+    z-index:-1;
+}
+
+/* HEADING */
+.hero-content h1{
+    font-size:3.4rem;
+    font-weight:700;
+    color:white;
+}
+
+.hero-content h1 span{
+    color:var(--gold);
+}
+
+.hero-content p{
+    font-size:1.4rem;
+}
+
+/* SEARCH */
+.glass-search{
+    margin-top:25px;
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    justify-content:center;
+    padding:18px;
+    border-radius:20px;
+    backdrop-filter:blur(20px);
+    background:rgba(255,255,255,0.25);
+}
+
+/* lead capture inline */
+.lead-capture{
+    display:none;
+    width:100%;
+    gap:10px;
+    justify-content:center;
+}
+
+.lead-capture button{
+    background:var(--dark-blue);
+    color:white;
+    border:none;
+    border-radius:10px;
+    padding:14px 20px;
+}
+
+/* form */
+#buyLeadForm{
+    display:none;
+    max-width:400px;
+    margin:40px auto;
+    text-align:center;
+}
+
+#buyLeadForm button{
+    background:var(--dark-blue);
+    color:white;
+    padding:14px 24px;
+    border:none;
+    border-radius:10px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Living in Pretoria</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<script defer src="script.js"></script>
+<script defer src="automation.js"></script>
+</head>
+
+<body>
+
+<div class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+        <h1>Living in <span>Pretoria</span></h1>
+        <p>Flats, Apartments & Student Accommodation</p>
+
+        <div class="glass-search" id="glassSearch">
+
+            <input type="text" id="searchInput" placeholder="Search properties in Pretoria">
+            <button id="voiceSearchBtn">🎤</button>
+
+            <select id="areaFilter">
+                <option>All Areas</option>
+                <option>Brooklyn</option>
+                <option>Hatfield</option>
+                <option>Arcadia</option>
+                <option>Loftus</option>
+                <option>University of Pretoria</option>
+            </select>
+
+            <select id="typeFilter">
+                <option>All Types</option>
+                <option>Student Accommodation</option>
+                <option>Apartments & Flats</option>
+                <option>Investment Opportunities</option>
+            </select>
+
+            <div class="lead-capture" id="leadCapture">
+                <input type="email" id="quickEmail" placeholder="Enter email to view matching listings">
+                <button id="quickCaptureBtn">View Listings</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="buyLeadForm">
+    <h3>Receive Listings</h3>
+    <input type="email" id="email" placeholder="Enter your email">
+    <button onclick="saveLead()">Get Listings</button>
+</div>
+
+</body>
+</html>
